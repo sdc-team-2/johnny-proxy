@@ -1,0 +1,19 @@
+{
+  "name": "johnny-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdc-team-2/johnny-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdc-team-2/johnny-proxy/issues"
+  },
+  "homepage": "https://github.com/sdc-team-2/johnny-proxy#readme"
+}
