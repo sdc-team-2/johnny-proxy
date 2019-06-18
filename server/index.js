@@ -1,11 +1,20 @@
 const express = require('express');
 const path = require('path');
-const proxy = require('express-http-proxy');
+const bodyParser = require ('body-parser');
+const morgan = require ('morgan');
+
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = 3000;
 
-app.use('', express.static(path.join(__dirname, '../public')));
+app.use(morgan('tiny'));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use(bodyParser.json());
 
-
-app.listen(port, () => console.log(`Listening on port ${port}!`));
+app.listen(port, (err) => {
+  if (err){
+    console.log(err);
+    return
+  }
+  console.log('Listening on port ' + port)
+});
